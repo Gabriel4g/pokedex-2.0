@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke2.0</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pokeball" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="9" cy="9" r="9" transform="translate(3 3)" />
+                <circle cx="12" cy="12" r="3" />
+                <path d="M3 12h6m6 0h6" />
+            </svg>
+            Pokedex
+        </h1>
+
+        <form action="">
+            <input type="text" placeholder="Pesquisar pokemon" id="input" autocomplete="off">
+            <button id="search-pokemons" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-search" width="40"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="15" cy="15" r="4" />
+                    <path d="M18.5 18.5l2.5 2.5" />
+                    <path d="M4 6h16" />
+                    <path d="M4 12h4" />
+                    <path d="M4 18h4" />
+                </svg>
+                Procurar
+            </button>
+        </form>
+    </header>
+
+    <div id="pokemon-select">
+        <h1 id="name-pokemon">Nome do pokemon</h1>
+        <button id="back">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+            </svg>
+        </button>
+        <img src="" alt="" id="img-pokemon">
+
+        <div id="stats-pokemons">
+            <h1 class="hp"></h1>
+            <h1 class="id"></h1>
+            <h1 class="height"></h1>
+            <h1 class="weight"></h1>
+        </div>
+    </div>
+
+    <main id="container">
+        <div class="cards-pokemons" style="background-color: rgb(86, 190, 190);">
+            <img src="" alt="" class="pokemonOne" width="100%" height="100%">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(86, 190, 190);">
+            <img src="" alt="" class="pokemonSecond">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(86, 190, 190);">
+            <img src="" alt="" class="pokemonThree">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(238, 164, 103);">
+            <img src="" alt="" class="pokemonFour">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(211, 77, 77);">
+            <img src="" alt="" class="pokemonFive">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(216, 98, 62);">
+            <img src="" alt="" class="pokemonSix">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(76, 184, 184);">
+            <img src="" alt="" class="pokemonSeven">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(16, 182, 182);">
+            <img src="" alt="" class="pokemonEight">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(72, 106, 218);">
+            <img src="" alt="" class="pokemonNine">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(86, 190, 117);">
+            <img src="" alt="" class="pokemonTen">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(69, 165, 40);">
+            <img src="" alt="" class="pokemonEleven">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(147, 105, 172);">
+            <img src="" alt="" class="pokemonTwelve">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(204, 141, 70);">
+            <img src="" alt="" class="pokemonThirteen">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(202, 169, 23);">
+            <img src="" alt="" class="pokemonFourTeen">
+        </div>
+        <div class="cards-pokemons" style="background-color: rgb(186, 196, 48);">
+            <img src="" alt="" class="pokemonFifteen">
+        </div>
+    </main>
+</body>
+</html>
