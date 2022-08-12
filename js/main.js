@@ -193,17 +193,17 @@ async function getPokemons(pokemon) {
 
 }
 
+getPokemons("")
+
 async function getPokemonChosen(pokemon) {
     const API = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     const data = await API.json();
 
-    statHP.innerHTML = data['stats']['base_stat']
-
     data.stats.forEach((el) => {
         statHP.innerHTML = `HP: ${el.base_stat}`;
         statID.innerHTML = `ID: ${data.id}`;
-        statHeight.innerHTML = `Height: ${data.height}`;
-        statWeight.innerHTML = `Weight: ${data.weight}`;
+        statHeight.innerHTML = `Height: ${data.height} dm`;
+        statWeight.innerHTML = `Weight: ${data.weight} hg`;
     })
 
     pokemonName.innerHTML = data.name.toUpperCase();
@@ -211,7 +211,7 @@ async function getPokemonChosen(pokemon) {
     imgPokemonChosen.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
 }
 
-getPokemons("charizard")
+
 
 searchPokemons.addEventListener("click", (event) => {
     event.preventDefault();
